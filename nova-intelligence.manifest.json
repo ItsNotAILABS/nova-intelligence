@@ -1,0 +1,24 @@
+{
+  "schema": "nova.intelligence_manifest.v1",
+  "name": "NOVA Intelligence",
+  "authority": "ItsNotAILABS / Casa de Medina / NOVA",
+  "repo_role": "Core intelligence runtime exports and proof-bearing engine contracts",
+  "runtime_surfaces": [
+    "coding harness",
+    "multi-AI modal products",
+    "CPL script family",
+    "polyglot engine ring",
+    "external AI connector platform"
+  ],
+  "proof_gates": [
+    "every engine has a manifest",
+    "every connector has a boundary law",
+    "every product has launch endpoint and proof gates",
+    "every runtime export has replay or verification path"
+  ],
+  "handoffs": {
+    "nexus": "register engine family and repo status",
+    "PhantomSDK": "export SDK-facing contracts",
+    "x-mcp-skills": "publish connector skills"
+  }
+}
