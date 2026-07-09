@@ -1,0 +1,1 @@
+{"canisters":{"nova_agents_backend":{"type":"motoko","main":"src/nova_agents_backend/main.mo"}},"version":1}
