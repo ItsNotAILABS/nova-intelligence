@@ -1,0 +1,10 @@
+{
+  "brand": "NOVA / ItsNotAILabs",
+  "vaultRoot": "D:\\NOVA_STORAGE_VAULT",
+  "workspaceRoot": "%USERPROFILE%\\Documents\\NOVA AGENTS\\Orchestrator",
+  "managedFolders": ["%USERPROFILE%\\Downloads"],
+  "mcp": {"host": "127.0.0.1", "port": 8787},
+  "browser": {"host": "127.0.0.1", "port": 8765},
+  "deployment": {"publicBrandOnly": true, "hideProviderPlumbing": true},
+  "operatorLaw": ["no_silent_app_use", "no_silent_delete", "no_silent_deploy", "receipt_required", "approval_required_for_external_actions"]
+}
