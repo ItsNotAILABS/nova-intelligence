@@ -1,0 +1,13 @@
+{
+  "agents": [
+    {"id":"NOVA-PRIME","role":"route and arbitrate commands"},
+    {"id":"CODEX-REPO","role":"repo intelligence, AST-lite parsing, semantic code search"},
+    {"id":"HEPHAESTUS-BUILD","role":"HTML, capsule, package and build output"},
+    {"id":"VESTA-STORAGE","role":"local storage, dedupe, D drive vault, receipts"},
+    {"id":"HERMES-EDGE","role":"internal web capsule and edge deployment lane"},
+    {"id":"HERMES-ICP","role":"ICP canister package lane and dfx staging"},
+    {"id":"THEMIS-GATE","role":"permissions, policy, receipts, rollback boundary"},
+    {"id":"AURORA-SURFACE","role":"local browser and desktop interface"},
+    {"id":"GEMINI-BRIDGE","role":"model tool declarations and function-call adapter"}
+  ]
+}
