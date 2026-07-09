@@ -1,0 +1,3 @@
+const https=require('https'); const fs=require('fs'); const path=require('path');
+const url='https://skills.internetcomputer.org/.well-known/skills/index.json'; const out=path.join(__dirname,'..','receipts','icp_skills_index_preflight.json');
+https.get(url,res=>{let data=''; res.on('data',d=>data+=d); res.on('end',()=>{fs.mkdirSync(path.dirname(out),{recursive:true}); fs.writeFileSync(out,JSON.stringify({url,statusCode:res.statusCode,fetchedAt:new Date().toISOString(),body:data.slice(0,200000)},null,2)); console.log(out);});}).on('error',e=>{fs.mkdirSync(path.dirname(out),{recursive:true}); fs.writeFileSync(out,JSON.stringify({url,error:e.message,fetchedAt:new Date().toISOString()},null,2)); console.log(out);});
