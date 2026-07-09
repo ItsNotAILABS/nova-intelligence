@@ -1,0 +1,1 @@
+export default { async fetch(request, env, ctx) { const html = `<!doctype html><html><head><title>NOVA Capsule</title></head><body><h1>NOVA / ItsNotAILabs</h1><p>Capsule served through internal HERMES edge lane.</p></body></html>`; return new Response(html,{headers:{'content-type':'text/html;charset=utf-8','x-powered-by':'NOVA'}}); } };
