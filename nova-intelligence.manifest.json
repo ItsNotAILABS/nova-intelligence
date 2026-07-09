@@ -1,24 +1,44 @@
 {
-  "schema": "nova.intelligence_manifest.v1",
+  "schema": "nova.intelligence_manifest.v2",
   "name": "NOVA Intelligence",
   "authority": "ItsNotAILABS / Casa de Medina / NOVA",
-  "repo_role": "Core intelligence runtime exports and proof-bearing engine contracts",
+  "repo_role": "Core intelligence runtime exports, proof-bearing engine contracts, and research doctrine library",
   "runtime_surfaces": [
     "coding harness",
     "multi-AI modal products",
     "CPL script family",
     "polyglot engine ring",
-    "external AI connector platform"
+    "external AI connector platform",
+    "organism bots MCP",
+    "browser workbench",
+    "WASM runtime strategy",
+    "SDK contract exports",
+    "proof and benchmark gates"
   ],
+  "research_packet": {
+    "index": "research/RESEARCH_INDEX.md",
+    "paper_count": 10,
+    "status": "review-packet",
+    "promotion_rule": "Papers become trunk doctrine only after executable claims are verified against code, tests, release artifacts, or tracked tickets."
+  },
   "proof_gates": [
     "every engine has a manifest",
     "every connector has a boundary law",
     "every product has launch endpoint and proof gates",
-    "every runtime export has replay or verification path"
+    "every runtime export has replay or verification path",
+    "every research claim names implementation status",
+    "every SDK-facing contract has a version and owner"
   ],
   "handoffs": {
-    "nexus": "register engine family and repo status",
-    "PhantomSDK": "export SDK-facing contracts",
-    "x-mcp-skills": "publish connector skills"
-  }
+    "nexus": "register engine family, research packet, and repo status",
+    "PhantomSDK": "export SDK-facing contracts and package surfaces",
+    "x-mcp-skills": "publish connector skills",
+    "organism-bots-mcp-server": "consume bot and route contracts"
+  },
+  "next_gates": [
+    "add schemas for engine contracts",
+    "add research certification matrix",
+    "add CI validation for index and manifest",
+    "bind papers to implementation tickets"
+  ]
 }
