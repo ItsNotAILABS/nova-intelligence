@@ -1,0 +1,1 @@
+window.NOVA_AGENT_COUNCIL='0.8.0';
