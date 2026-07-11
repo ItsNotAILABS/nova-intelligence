@@ -5,7 +5,6 @@
 ![Contracts](https://img.shields.io/badge/runtime%20contracts-versioned-0b7285)
 ![Validator](https://img.shields.io/badge/validator-stdlib%20python-success)
 ![Truth Line](https://img.shields.io/badge/truth%20line-proof%20before%20canon-2f9e44)
-![Agent Council](https://img.shields.io/badge/NOVA%20Agent%20Council-v0.8-111827)
 
 Core intelligence runtime exports, engine contracts, and proof-bearing research doctrine for the NOVA repo family.
 
