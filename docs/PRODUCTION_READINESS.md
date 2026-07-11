@@ -1,0 +1,2 @@
+# NOVA Agent Council v0.8 Production Readiness
+This package adds the production layers after v0.7: MCP Spine tools, Gemini function declaration adapter, repo indexing with AST-lite signatures and dependency graph, semantic search, sandbox allowlist, storage migration, capsule builder, ICP staging, HERMES edge staging, validation receipts, and CI. External write/deploy actions are staged as permissions, not executed silently.

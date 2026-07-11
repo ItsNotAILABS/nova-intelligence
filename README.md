@@ -10,9 +10,32 @@ Core intelligence runtime exports, engine contracts, and proof-bearing research 
 
 This repository is the research and contract brain of the ecosystem. It does not claim every paper is deployed by merge alone. It preserves high-level doctrine while marking what is implemented, what is contracted, and what still needs proof.
 
+## NOVA Agent Council v0.8 — Production Layers
+
+Local-first agent council for NOVA / ItsNotAILabs with MCP Spine, Gemini-compatible function declarations, repo intelligence, sandbox staging, D:\\ vault storage operations, HTML/Wasm-style capsules, ICP staging, and HERMES edge capsule staging.
+
+Start the local surfaces:
+
+```bat
+Validate.bat
+Start-NOVAAgentCouncil-MCP.bat
+Start-NOVAAgentCouncil-Browser.bat
+```
+
+Run production gates:
+
+```bat
+node scripts\validate.js
+node engine\cli.js repo-index .
+node adapters\gemini_adapter.js
+node engine\cli.js capsule test-capsule
+```
+
+Agent law: tools discover and propose. Operator approval controls external action. Receipts prove local work.
+
 ## Search Keywords
 
-NOVA intelligence, AI runtime contracts, agent research papers, MCP architecture, AI governance runtime, foundation model runtime profiles, CPL language family, polyglot AI engine, WASM AI runtime, external AI connector strategy, recursive AI architecture.
+NOVA intelligence, AI runtime contracts, agent research papers, MCP architecture, AI governance runtime, foundation model runtime profiles, CPL language family, polyglot AI engine, WASM AI runtime, external AI connector strategy, recursive AI architecture, NOVA Agent Council, MCP Spine, Gemini adapter, repo intelligence, HERMES edge capsules, ICP deployment staging.
 
 ## Role
 
@@ -28,6 +51,11 @@ This repository owns reusable intelligence contracts consumed by other repos:
 - WASM Runtime Strategy
 - SDK Contract Exports
 - Proof and Benchmark Gates
+- NOVA Agent Council
+- NOVA MCP Spine
+- CODEX-REPO Intelligence
+- HERMES Edge Capsule Lane
+- HERMES ICP Capsule Lane
 
 ## Quick Start
 
@@ -54,6 +82,9 @@ cat research/RESEARCH_CERTIFICATION_MATRIX.md
 | Engine contracts | `docs/ENGINE_CONTRACTS.md` |
 | Manifest | `nova-intelligence.manifest.json` |
 | Validator | `tools/validate_research_packet.py` |
+| Agent Council production note | `docs/PRODUCTION_READINESS.md` |
+| MCP tools | `docs/MCP_TOOLS.md` |
+| Operator boundary | `docs/OPERATOR_BOUNDARY.md` |
 
 ## Paper Library
 
@@ -71,6 +102,18 @@ The first packet includes 10 papers covering:
 10. WASM runtime strategy
 
 See `research/RESEARCH_CERTIFICATION_MATRIX.md` for proof status and promotion gates.
+
+## Agent Council Runtime Surfaces
+
+- `server/nova_mcp_server.js` exposes NOVA MCP Spine tools.
+- `adapters/gemini_adapter.js` exports Gemini-compatible function declarations.
+- `engine/repo_intelligence.js` provides CODEX repo indexing and semantic search.
+- `engine/sandbox.js` provides governed sandbox execution.
+- `engine/storage_engine.js` handles D:\\NOVA_STORAGE_VAULT storage migration.
+- `engine/capsule.js` builds provider-hidden NOVA web capsules.
+- `deploy/icp/` stages the ICP canister lane.
+- `deploy/hermes-edge/` stages the HERMES edge capsule lane.
+- `electron/` provides the local desktop shell.
 
 ## Handoffs
 
@@ -91,4 +134,4 @@ Recommended repository topics:
 
 ## Next Gate
 
-Add JSON schemas for engine families, bind papers to implementation tickets, and add CI for `python tools/validate_research_packet.py`.
+Add JSON schemas for engine families, bind papers to implementation tickets, and add CI for `python tools/validate_research_packet.py` plus `node scripts/validate.js`.

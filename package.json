@@ -1,0 +1,18 @@
+{
+  "name": "nova-agent-council",
+  "version": "0.8.0-production-layers",
+  "private": true,
+  "description": "Local-first NOVA Agent Council with MCP Spine, repo intelligence, Gemini adapter, capsules, ICP and HERMES deployment lanes.",
+  "main": "electron/main.js",
+  "scripts": {
+    "start:browser": "node engine/local_server.js",
+    "start:mcp": "node server/nova_mcp_server.js --http",
+    "start:desktop": "electron .",
+    "validate": "node scripts/validate.js",
+    "index:repo": "node engine/cli.js repo-index .",
+    "build:capsule": "node scripts/build_capsule.js",
+    "icp:preflight": "node scripts/icp_preflight.js"
+  },
+  "optionalDependencies": {"electron": "latest"},
+  "engines": {"node": ">=18"}
+}
