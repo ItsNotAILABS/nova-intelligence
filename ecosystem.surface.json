@@ -1,0 +1,25 @@
+{
+  "schema": "nexus.capability.v1",
+  "component": "nova-intelligence",
+  "repository": "ItsNotAILABS/nova-intelligence",
+  "role": "intelligence-contract-and-research-proof-plane",
+  "actions": [
+    "intelligence.contract.describe",
+    "intelligence.compatibility.evaluate",
+    "intelligence.release_evidence.classify",
+    "intelligence.plan.review",
+    "intelligence.research.index"
+  ],
+  "risk_tiers": {
+    "intelligence.contract.describe": "read",
+    "intelligence.compatibility.evaluate": "read",
+    "intelligence.release_evidence.classify": "read",
+    "intelligence.plan.review": "read",
+    "intelligence.research.index": "read"
+  },
+  "produces": ["nexus.capability.v1","nexus.compatibility.v1","nexus.release-evidence.v1","nexus.context-pack.v1"],
+  "consumes": ["nexus.task.v1","nexus.artifact.v1","nexus.execution-receipt.v1","nexus.telemetry.v1"],
+  "limits": {"external_execution": false, "trunk_mutation": false, "private_reasoning_export": false},
+  "proof": {"state": "source", "authority": "repository evidence and validators"},
+  "authority": "ItsNotAILABS/nexus"
+}
