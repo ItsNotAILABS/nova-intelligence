@@ -1,0 +1,55 @@
+{
+  "schema": "nova.corpus-research-index.v1",
+  "corpus": "medina.corpus-architectura.v2@2.1.0",
+  "authority": "ItsNotAILABS/nexus",
+  "paper_count": 13,
+  "papers": [
+    {"number":1,"id":"tres-formae-una-mens","volume":"I","review_domains":["product-bodies","state-ownership","availability","synchronization"]},
+    {"number":2,"id":"nubes-perennis-corpus-intermittens","volume":"II","review_domains":["durable-cloud","intermittent-devices","leases","recovery"]},
+    {"number":3,"id":"computatio-sui-iuris","volume":"II","review_domains":["sovereignty","local-execution","exportability","replaceability"]},
+    {"number":4,"id":"identitas-potestas-et-fines","volume":"I","review_domains":["identity","authority","tenancy","delegation"]},
+    {"number":5,"id":"foedus-machinarum","volume":"II","review_domains":["device-federation","capability-discovery","scheduling","trust"]},
+    {"number":6,"id":"agentes-sub-lege","volume":"II","review_domains":["runtime-cells","approval","policy","execution"]},
+    {"number":7,"id":"consensus-ex-minimis","volume":"I","review_domains":["atomic-models","model-council","bounded-capsules","consensus"]},
+    {"number":8,"id":"memoria-viva-et-continuatio","volume":"I","review_domains":["memory","identity-continuity","checkpoint-lineage","rollback"]},
+    {"number":9,"id":"probatio-ante-assertionem","volume":"I","review_domains":["evidence-classes","receipts","custody","validation"]},
+    {"number":10,"id":"mercatus-facultatum-agentium","volume":"II","review_domains":["capability-market","permissions","quotas","rollback"]},
+    {"number":11,"id":"vox-corpus-mens","volume":"II","review_domains":["voice-state","consent","turn-taking","prosody"]},
+    {"number":12,"id":"civitas-intelligentiarum","volume":"II","review_domains":["ai-native-organization","human-agency","handoff","audit"]},
+    {"number":13,"id":"emergentia-gubernata","volume":"II","review_domains":["recurrence","consequence","novelty","governed-emergence"]}
+  ],
+  "evidence_classes": [
+    "E0-assertion",
+    "E1-source",
+    "E2-execution-log",
+    "E3-validated-output",
+    "E4-signed-receipt",
+    "E5-external-custody-and-reproduction"
+  ],
+  "memory_classes": [
+    "weights",
+    "working",
+    "episodic",
+    "semantic",
+    "procedural",
+    "relational",
+    "identity"
+  ],
+  "review_rules": {
+    "architecture_configuration": "E1-source only until exact execution and evaluation evidence exists",
+    "deployment": "requires E3 validated route or stronger",
+    "checkpoint_promotion": "requires exact hashes, tokenizer custody, evaluation, authorization and rollback evidence",
+    "persistent_memory": "requires cross-session or cross-checkpoint evidence",
+    "emergence": "requires a bounded longitudinal observation window, recurrence, consequence and evidence; novelty alone is insufficient"
+  },
+  "claim_boundaries": [
+    "architecture-configuration-is-not-a-trained-checkpoint",
+    "accepted-context-is-not-dense-attention",
+    "named-agent-is-not-a-separately-trained-model",
+    "source-code-is-not-deployment-evidence",
+    "local-hash-chain-is-not-external-custody",
+    "same-session-recall-is-not-persistent-memory",
+    "successful-build-is-not-clean-install-proof",
+    "generated-answer-is-not-experimental-validation"
+  ]
+}
