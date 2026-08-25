@@ -3,10 +3,15 @@
   "component": "nova-intelligence",
   "repository": "ItsNotAILABS/nova-intelligence",
   "role": "intelligence-contract-and-research-proof-plane",
+  "research_corpus": "medina.corpus-architectura.v2@2.1.0",
   "actions": [
     "intelligence.contract.describe",
     "intelligence.compatibility.evaluate",
     "intelligence.release_evidence.classify",
+    "intelligence.evidence.classify",
+    "intelligence.continuity.review",
+    "intelligence.emergence.review",
+    "intelligence.sovereignty.review",
     "intelligence.plan.review",
     "intelligence.research.index"
   ],
@@ -14,12 +19,47 @@
     "intelligence.contract.describe": "read",
     "intelligence.compatibility.evaluate": "read",
     "intelligence.release_evidence.classify": "read",
+    "intelligence.evidence.classify": "read",
+    "intelligence.continuity.review": "read-sensitive",
+    "intelligence.emergence.review": "read-sensitive",
+    "intelligence.sovereignty.review": "read-evidence",
     "intelligence.plan.review": "read",
     "intelligence.research.index": "read"
   },
-  "produces": ["nexus.capability.v1","nexus.compatibility.v1","nexus.release-evidence.v1","nexus.context-pack.v1"],
-  "consumes": ["nexus.task.v1","nexus.artifact.v1","nexus.execution-receipt.v1","nexus.telemetry.v1"],
-  "limits": {"external_execution": false, "trunk_mutation": false, "private_reasoning_export": false},
-  "proof": {"state": "source", "authority": "repository evidence and validators"},
+  "produces": [
+    "nexus.capability.v1",
+    "nexus.compatibility.v1",
+    "nexus.release-evidence.v1",
+    "nexus.context-pack.v1",
+    "nexus.evidence-classification.v1",
+    "nexus.continuity-snapshot.v1",
+    "nexus.emergence-observation.v1",
+    "nexus.sovereignty-profile.v1"
+  ],
+  "consumes": [
+    "nexus.task.v1",
+    "nexus.artifact.v1",
+    "nexus.execution-receipt.v1",
+    "nexus.telemetry.v1",
+    "nexus.memory-event.v1",
+    "auro.model-family.v2",
+    "pocket.triform-product.v1",
+    "pocket.voice-state.v1"
+  ],
+  "limits": {
+    "external_execution": false,
+    "trunk_mutation": false,
+    "private_reasoning_export": false,
+    "evidence_invention": false,
+    "same_session_recall_as_continuity": false,
+    "novel_output_as_emergence_proof": false,
+    "architecture_as_capability_result": false
+  },
+  "proof": {
+    "state": "source",
+    "authority": "repository evidence and validators",
+    "corpus_index": "research/corpus-index.json",
+    "execution_delegated": true
+  },
   "authority": "ItsNotAILABS/nexus"
 }
